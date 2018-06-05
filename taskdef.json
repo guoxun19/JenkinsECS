@@ -1,5 +1,5 @@
 {
-    "family": "t2.micro",
+    "family": "test",
     "containerDefinitions": [
         {
             "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
