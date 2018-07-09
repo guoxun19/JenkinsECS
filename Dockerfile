@@ -8,6 +8,6 @@ MAINTAINER GuoXun
 #CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 
 RUN yum install -y httpd
-RUN echo '<head>Hi~ I'm in your container!</head> ' > /var/www/html/index.html
+RUN echo '<head>Hi~ I am in your container!</head> ' > /var/www/html/index.html
 EXPOSE 80
 ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
