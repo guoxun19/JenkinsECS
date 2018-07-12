@@ -8,7 +8,7 @@ MAINTAINER GuoXun
 #CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 
 RUN yum install -y httpd
-RUN echo '<body><h1 style="text-align:center"><p style="font-size:50px;">Hi~ I am in your container! <br></br>'> /var/www/html/index.html
+RUN echo '<body><h1 style="text-align:center"><p style="font-size:80px;">Hi~ I am in your container! <br></br>'> /var/www/html/index.html
 RUN echo $HOSTNAME >> /var/www/html/index.html
 RUN echo '</p></h1></body>' >> /var/www/html/index.html
 EXPOSE 80
